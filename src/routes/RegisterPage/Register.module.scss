@@ -1,0 +1,22 @@
+.myComponent {
+    position: relative;
+}
+
+.buttonSub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(73, 73, 245);
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: 0.3s;
+
+    &:hover {
+        color: black;
+        background-color: rgb(106, 207, 247);
+        border: 1px solid black;
+    }
+}

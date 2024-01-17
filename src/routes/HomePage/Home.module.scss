@@ -1,0 +1,27 @@
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 15px;
+    padding: 10px;
+}
+
+.Img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Name {
+    color: white;
+}
+
+.Price {
+    color: white;
+}

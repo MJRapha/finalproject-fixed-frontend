@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+//import React, { useEffect } from 'react';
 import './App.css';
-
+import Navabar from './components/main-navbar/Navabar';
+import { Route, Routes } from "react-router-dom";
+import './themed-bootstrap.scss'
+import Footer from './components/footer/Footer';
+import Home from './routes/HomePage/Home';
+import About from './routes/AboutPage/About';
+import Register from './routes/RegisterPage/Register';
+import Login from './routes/LoginPage/Login';
+import Add from './routes/AddPage/Add';
+//import { getCards } from './services/cards.service'
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navabar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<Add />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

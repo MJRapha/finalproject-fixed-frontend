@@ -1,0 +1,32 @@
+.navWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        padding: 8px;
+        margin: 30px;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+}
+
+.navWrapper a:hover {
+    color: rgb(37, 121, 205);
+}
+
+.navWrapper a.active {
+    color: rgb(37, 121, 205);
+}
+
+@media (min-width:1200px) {
+    .navWrapper {
+        padding: 5px 20px 0 0
+    }
+}
