@@ -51,9 +51,7 @@ const Home = () => {
                                         if (result.isConfirmed) {
                                             deleteCard((card as any)._id).then(() => {
                                                 setCards(cards.filter(cardOther => (cardOther as any)._id !== (card as any)._id))
-                                            })/* .catch(e => {
-                                                Swal.fire("Opps!", "You are not authorized");
-                                            }) */
+                                            })
                                             Swal.fire("Deleted!", "", "success");
                                         } else if (result.isDenied) {
                                             Swal.fire("Keeping the card", "", "info");

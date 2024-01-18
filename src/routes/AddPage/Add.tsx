@@ -1,4 +1,3 @@
-//import { FormEvent, useState } from "react"
 import css from "./Add.module.scss"
 import { addCard } from "../../services/cards.service"
 import { ICard } from "../../@types/@types"

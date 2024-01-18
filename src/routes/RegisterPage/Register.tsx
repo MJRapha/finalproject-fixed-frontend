@@ -57,19 +57,6 @@ const Register = () => {
                 <h2 className="mb-3" style={{ textDecoration: "underline", textAlign: "center" }}>Register</h2>
                 <div>
                     {errMessage && <div>${errMessage}</div>}
-                    {/* {isLoading && (
-                        <div className="mx-auto w-25">
-                            <ColorRing
-                                visible={true}
-                                height="80"
-                                width="80"
-                                ariaLabel="blocks-loading"
-                                wrapperStyle={{ margin: "0 auto" }}
-                                wrapperClass="blocks-wrapper"
-                                colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-                            />
-                        </div>
-                    )} */}
                     <Formik
                         initialValues={initialValues}
                         onSubmit={handleRegister}
